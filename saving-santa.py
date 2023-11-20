@@ -11,3 +11,16 @@ print("the evil christmas monster!")
 print("His eyes glow red as he lets out a menacing laugh. \n")
 
 print('"Ho ho ho!" mocks Krampus. "You didn\'t think Christmas would go on without a hitch, did you?"\n')
+
+print("With a snap of his sinister fingers, Krampus traps the elves in an icy cage.")
+print("Santa steps forward, apalled.\n")
+
+print('"Krampus! What is the meaning of this?" Santa demands.\n')
+
+print('"Isn\'t it obvious, Santa? I\'m, taking over Christmas this year!')
+print('And you won\'t be able to stop me," Krampus sneers.\n')
+
+print('"Somebody save me!" Santa calls as Krampus drags him put into the darkness.\n')
+
+print("The elves look around in dismaY. Christmas is doomed unless someone can stop")
+print("Krampus and save Santa before sunrise!\n")
