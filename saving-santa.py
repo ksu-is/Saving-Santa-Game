@@ -20,7 +20,17 @@ print('"Krampus! What is the meaning of this?" Santa demands.\n')
 print('"Isn\'t it obvious, Santa? I\'m, taking over Christmas this year!')
 print('And you won\'t be able to stop me," Krampus sneers.\n')
 
-print('"Somebody save me!" Santa calls as Krampus drags him put into the darkness.\n')
+print("He grabs Santa in his clawed hand and throws a magical sack over his head")
+print('Santa cries out, struggling against Krampus\'s grasp.\n')
 
-print("The elves look around in dismaY. Christmas is doomed unless someone can stop")
+print('"Somebody save me!" Santa calls as Krampus drags him out into the darkness.\n')
+
+print("The elves look around in dismay. Christmas is doomed unless someone can stop")
 print("Krampus and save Santa before sunrise!\n")
+
+response = input("Will you save Santa and stop Krampus from ruining Christmas? (Y/N)")
+
+if response.upper() == "Y":
+    print("You embark on the adventure to save Santa!")
+else:
+    print("You decide to stay put, and Christmas is lost forever!")
