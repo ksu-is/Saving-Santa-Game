@@ -17,7 +17,7 @@ time.sleep(3)
 
 print("The elves gasp as the workshop door flies open with a bang, ")
 print("a blast of cold air rushing in.")
-time.sleep(2)
+time.sleep(3)
 
 print("Standing in the doorway is the shadowy figure of Krampus, ")
 print("the evil christmas monster!")
