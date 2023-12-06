@@ -102,9 +102,12 @@ print("Head Elf: 'Thank goodness you're here! We have to find Santa!'")
 time.sleep(3)  
 print("You can:")
 time.sleep(2)
+
 print("1. Check Santa's office for clues")  
 print("2. Talk to Mrs. Claus")
 print("3. Follow reindeer tracks to search the stables")
+
+path = input("Which path do you choose? 1, 2, or 3: ")
 
 if path == "1":
   print("\nYou head to Santa's office...")
@@ -158,3 +161,18 @@ if approach == "fight":
 
     tab1()
     root.mainloop()
+
+     # Fight path  
+    print("Select your weapon:")
+    print("1. Peppermint Gun") 
+    print("2. Nutcracker Slingshot")
+    print("3. Hot Chocolate Bomb")
+
+    weapon = input("Choose 1, 2, or 3:  ")
+
+    if weapon == "1":
+
+        print("\nYou blast the elves with peppermint and they spin around laughing!")  
+        print("\nThe elves are friendly now and show you to the stables.")
+    else:
+        print("You lost! Christmas is doomed.")
