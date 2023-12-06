@@ -204,6 +204,29 @@ print("\nAs you investigate further, you hear a loud BANG!")
 time.sleep(c)  
 print("\nKrampus jumps out from the shadows!")
 
+root = Tk()
+root.minsize(height=500, width=900)
+def tab1():
+        def tab2():
+            label1.destroy()
+            button1.destroy()
+            label2 = Label(root, text='Krampus is a very powerful monster. You might not be able to fight him just yet. Will you take the chance?', font=('Times_New_Roman',25))
+            label2.pack()
 
+            def back():
+                label2.destroy()
+                button2.destroy()
+                tab1()
+
+            button2 = Button(root, text='BACK', font=('Times_New_Roman',25), command=back, activebackground='blue')
+            button2.pack(side=BOTTOM)
+
+        label1 = Label(root, text='HINT 2', font=('Times_New_Roman',25))
+        label1.pack()
+        button1 = Button(root, text='NEXT', font=('Times_New_Roman',25), command=tab2, activebackground='blue')
+        button1.pack(side=BOTTOM)
+
+tab1()
+root.mainloop()
 
 
