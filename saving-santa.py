@@ -98,3 +98,14 @@ print("1. Check Santa's office for clues")
 print("2. Talk to Mrs. Claus")
 print("3. Follow reindeer tracks to search the stables")
 
+if path == "1":
+  print("\nYou head to Santa's office...")
+  print("\nNo clues but you overhear noise from the stable...")
+
+elif path == "2":
+ print("\nYou enter Santa's house to find Mrs. Claus baking gingerbread...")
+ print("\nShe suggests you check the stables...")
+
+elif path == "3":
+  print("\nYou discover reindeer tracks leading towards the stables...")
+  print("\nYou cautiously enter the stables...")
