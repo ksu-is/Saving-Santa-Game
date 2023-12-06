@@ -176,3 +176,14 @@ if approach == "fight":
         print("\nThe elves are friendly now and show you to the stables.")
     else:
         print("You lost! Christmas is doomed.")
+        loss_window =Tk()
+        loss_window.title('Game Over')
+        loss_canvas = Canvas(loss_window, width=450, height=450)
+        loss_canvas.pack()
+        loss_image = PhotoImage(file='//Users//alaysiahhernton//Desktop//sadsanta.png')
+        loss_canvas.create_image(0, 0, anchor=NW, image=loss_image)
+
+        loss_window.mainloop()
+        exit()
+
+
