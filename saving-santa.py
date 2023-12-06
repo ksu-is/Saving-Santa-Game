@@ -37,6 +37,14 @@ time.sleep(3)
 
 print("Standing in the doorway is the shadowy figure of Krampus, ")
 print("the evil christmas monster!")
+loss_window =Tk()
+loss_window.title('Krampus')
+loss_canvas = Canvas(loss_window, width=450, height=450)
+loss_canvas.pack()
+loss_image = PhotoImage(file='//Users//alaysiahhernton//Desktop//kramp.png')
+loss_canvas.create_image(0, 0, anchor=NW, image=loss_image)
+
+loss_window.mainloop()
 time.sleep(3)
 
 print("His eyes glow red as he lets out a menacing laugh. \n")
