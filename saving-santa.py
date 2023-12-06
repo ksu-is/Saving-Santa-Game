@@ -82,3 +82,19 @@ else:
 
     loss_window.mainloop()
     exit()
+    
+print("\nYou set off into the darkness towards Santa's village hoping to pick up his trail.")
+time.sleep(3)
+print("Twinkling lights glow in the distance marking the cheerful village.")  
+time.sleep(3)  
+print("You arrive to find the elves running around in a panic!\n")
+time.sleep(3)  
+
+print("Head Elf: 'Thank goodness you're here! We have to find Santa!'")
+time.sleep(3)  
+print("You can:")
+time.sleep(2)
+print("1. Check Santa's office for clues")  
+print("2. Talk to Mrs. Claus")
+print("3. Follow reindeer tracks to search the stables")
+
