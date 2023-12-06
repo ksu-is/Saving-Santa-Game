@@ -249,5 +249,26 @@ else:
   time.sleep(a)
   print("As you explain what happened, her eyes gleam with determination...")
   time.sleep(a)
-  
+
+help_mrs_claus = input("Will you ask Mrs. Claus to help you face Krampus? Y/N: ")
+
+if help_mrs_claus == "Y":
+    print("\nMrs. Claus nods firmly, grabs a magic staff, and joins your quest!")
+
+else: 
+    print("\nYou thank Mrs. Claus for the cookies but decide to save Santa alone.")
+    time.sleep(a)
+    print("This was a mistake! Krampus finds you and captures you!")
+
+    loss_window =Tk()
+    loss_window.title('Game Over')
+    loss_canvas = Canvas(loss_window, width=450, height=450)
+    loss_canvas.pack()
+    loss_image = PhotoImage(file='//Users//alaysiahhernton//Desktop//sadsanta.png')
+    loss_canvas.create_image(0, 0, anchor=NW, image=loss_image)
+
+    loss_window.mainloop()
+    time.sleep(a)
+
+    exit()
 
