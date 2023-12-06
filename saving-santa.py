@@ -117,3 +117,15 @@ elif path == "2":
 elif path == "3":
   print("\nYou discover reindeer tracks leading towards the stables...")
   print("\nYou cautiously enter the stables...")
+
+print("\nAlong the way you suddenly find yourself surrounded by three evil elves!")  
+time.sleep(3)
+print("They snarl and snap pointy candy canes menacingly...")
+time.sleep(3) 
+
+
+approach = input("Do you fight the elves or sneak past? (fight/sneak) ")
+
+
+
+if approach == "fight":
