@@ -229,4 +229,25 @@ def tab1():
 tab1()
 root.mainloop()
 
+fight_flee = input("Do you fight Krampus or run away? Type 'fight' or 'flee': ")
+
+if fight_flee == "fight":
+  print("\nYou fool... you cannot defeat Krampus alone! He captures you!")
+  loss_window =Tk()
+  loss_window.title('Game Over')
+  loss_canvas = Canvas(loss_window, width=450, height=450)
+  loss_canvas.pack()
+  loss_image = PhotoImage(file='//Users//alaysiahhernton//Desktop//sadsanta.png')
+  loss_canvas.create_image(0, 0, anchor=NW, image=loss_image)
+
+  loss_window.mainloop()
+  exit()
+else:
+  print("\nYou narrowly escape and go to get help from Mrs. Claus!")
+  time.sleep(a)
+  print("\nMrs. Claus tries to hide her worry and offers you milk and cookies")
+  time.sleep(a)
+  print("As you explain what happened, her eyes gleam with determination...")
+  time.sleep(a)
+  
 
