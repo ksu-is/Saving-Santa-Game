@@ -73,3 +73,12 @@ if response.upper() == "Y":
     print("You embark on the adventure to save Santa!")
 else:
     print("You decide to stay put, and Christmas is lost forever!")
+    loss_window =Tk()
+    loss_window.title('Game Over')
+    loss_canvas = Canvas(loss_window, width=450, height=450)
+    loss_canvas.pack()
+    loss_image = PhotoImage(file='//Users//alaysiahhernton//Desktop//sadsanta.png')
+    loss_canvas.create_image(0, 0, anchor=NW, image=loss_image)
+
+    loss_window.mainloop()
+    exit()
