@@ -272,3 +272,114 @@ else:
 
     exit()
 
+
+print("\nYou and Mrs. Claus follow sleigh tracks leading into the mountains...")
+time.sleep(a)
+
+print("\nYou suddenly spot a gingerbread cottage tucked in the woods!") 
+
+investigate = input("Do you want to 'approach' the cottage or 'avoid' it?")
+
+if investigate == "avoid":
+  print("\nYou ignore the cottage and follow the sleigh tracks higher into the mountains")
+  
+else:
+  print("\nAs you approach, the front door creaks open by itself...")
+  
+  enter = input("Do you want to 'go inside' the mysterious cottage or 'walk away'?")
+  
+  if enter == "walk away":
+    print("\nYou decide not to risk going in. The mountain pass beckons...")
+  
+  else:
+    print("\nA cackle echoes as the door slams shut behind you! Uh oh...")
+    
+next_move = input("Cast a protection spell or search for exits?")
+
+if next_move.lower() == "protection spell":
+  print("\nYou cast a shielding spell on you and Mrs. Claus.") 
+  print("Feeling safer, you search the creepy cottage for a way out.")
+else:
+  print("You search the cottage walls for a hidden exit.")
+  
+print("\nPushing aside a bookshelf, you find a trapdoor leading down...")
+
+proceed = input("Open the trapdoor and climb down? Y/N >")
+
+if proceed.upper() == "N":
+  print("\nYou turned back and flee the cottage. But outside Krampus waits!")
+  print("He captures you both! Christmas cheer is lost forever.")
+  loss_window =Tk()
+  loss_window.title('Game Over')
+  loss_canvas = Canvas(loss_window, width=450, height=450)
+  loss_canvas.pack()
+  loss_image = PhotoImage(file='//Users//alaysiahhernton//Desktop//sadsanta.png')
+  loss_canvas.create_image(0, 0, anchor=NW, image=loss_image)
+
+  loss_window.mainloop()
+  time.sleep(a)
+
+  exit()
+  # Game Over
+  
+else:
+  print("\nYou descend down the trapdoor into an icy cave...")
+  
+  print("In the dark depths, you spot Santa tied up!")
+  
+  untie = input("Quick! Will you untie Santa? Y/N: ")
+
+  if untie.upper() == "N":
+    print("\nWhile you hesitated, Krampus returned! You both are captured!") 
+    loss_window =Tk()
+    loss_window.title('Game Over')
+    loss_canvas = Canvas(loss_window, width=450, height=450)
+    loss_canvas.pack()
+    loss_image = PhotoImage(file='//Users//alaysiahhernton//Desktop//sadsanta.png')
+    loss_canvas.create_image(0, 0, anchor=NW, image=loss_image)
+
+    loss_window.mainloop()
+    time.sleep(a)
+
+    exit()
+    # Game over
+  
+  else: 
+    print("\nYou run to untie Santa, but a loud stomp stops you...")
+    
+    print("\nKrampus appears! 'Fools! You fell for my trap.'")
+    
+    print("\nHe attacks with his sack of sorrows!")
+  
+# Battle system
+print("\n*** Holiday Boss Fight ***")
+
+print("Choose your weapon:")
+print("1. Nutcracker sword")
+print("2. Candy cane crossbow") 
+print("3. Fruitcake launcher")  
+
+weapon = input("> ")
+
+if weapon == "1":
+  print("\n You strike Krampus with the nutcracker! ")
+  print("\n Krampus laughs. 'You cannot stop me!'")
+  print("\n Krampus captures you all! Christmas is lost...")
+  
+  loss_window =Tk()
+  loss_window.title('Game Over')
+  loss_canvas = Canvas(loss_window, width=450, height=450)
+  loss_canvas.pack()
+  loss_image = PhotoImage(file='//Users//alaysiahhernton//Desktop//sadsanta.png')
+  loss_canvas.create_image(0, 0, anchor=NW, image=loss_image)
+
+  loss_window.mainloop()
+  time.sleep(a)
+
+  exit()
+  # Game over
+  
+else:
+  print("\nYou smashed Krampus with the right weapon!")
+  print("Christmas cheer overwhelms him until he flees...")
+  print("\nChristmas is saved! Santa offers you a ride on his sleigh.")
