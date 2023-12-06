@@ -6,6 +6,16 @@ a = 1
 b = 0.2
 c = 1
 
+print()
+print()
+print("     ######################")
+print("     |                    |")
+print("     |   Saving Santa     |")
+print("     |                    |")
+print("     ######################")
+print()
+print()
+
 print("It's the night before chrismas and all through the North Pole")
 time.sleep(2)
 
