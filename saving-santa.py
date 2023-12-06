@@ -186,4 +186,24 @@ if approach == "fight":
         loss_window.mainloop()
         exit()
 
+else:
+    print("\nYou sneak past the elves towards the stables")
+
+path = input("Do you go to the Reindeer pen or sled garage? enter reindeer or garage: ")
+
+if path == "reindeer":
+    print("\nYou approach the reindeer pen and see hoof prints leading towards the woods...")
+    time.sleep(a)
+
+elif path == "garage":  
+    print("\nYou enter the sled garage and find recent tire tracks from Santa's sled...")
+    time.sleep(a)
+  
+print("\nAs you investigate further, you hear a loud BANG!")
+
+time.sleep(c)  
+print("\nKrampus jumps out from the shadows!")
+
+
+
 
