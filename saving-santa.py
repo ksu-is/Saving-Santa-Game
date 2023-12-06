@@ -129,3 +129,32 @@ approach = input("Do you fight the elves or sneak past? (fight/sneak) ")
 
 
 if approach == "fight":
+
+
+    # Tkinter pop-up window
+
+    root = Tk()
+    root.minsize(height=500, width=900)
+
+    def tab1():
+        def tab2():
+            label1.destroy()
+            button1.destroy()
+            label2 = Label(root, text='These elves seem crazed by something sour. What sweet and freshening treat might make them jolly again and turn that frown upside down?', font=('Times_New_Roman',25))
+            label2.pack()
+
+            def back():
+                label2.destroy()
+                button2.destroy()
+                tab1()
+
+            button2 = Button(root, text='BACK', font=('Times_New_Roman',25), command=back, activebackground='blue')
+            button2.pack(side=BOTTOM)
+
+        label1 = Label(root, text='HINT 1', font=('Times_New_Roman',25))
+        label1.pack()
+        button1 = Button(root, text='NEXT', font=('Times_New_Roman',25), command=tab2, activebackground='blue')
+        button1.pack(side=BOTTOM)
+
+    tab1()
+    root.mainloop()
