@@ -1,4 +1,10 @@
+import sys
 import time
+from tkinter import*
+
+a = 1
+b = 0.2
+c = 1
 
 print("It's the night before chrismas and all through the North Pole")
 time.sleep(2)
